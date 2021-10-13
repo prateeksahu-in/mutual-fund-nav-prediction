@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script>
         function add() {
             var ct=[],cc=[],cp=[],b, totalProfit=0;
@@ -60,27 +60,63 @@
             for (let i = 0; i < cp.length; i++) {
                 totalProfit += cp[i];
             }
+            totalProfit = parseFloat(totalProfit).toFixed(2)
             document.getElementById("answer").value = totalProfit;
-            document.getElementById("answer2").value = totalProfit*750000/100;
+            document.getElementById("answer").value += "%";
+            totalProfit = parseFloat(totalProfit * 750000 / 100).toFixed(2)
+            document.getElementById("answer2").value = totalProfit;
+            if(totalProfit>=0)
+            {
+                document.getElementById("answer").style.color = "#00d09c";   
+                document.getElementById("answer2").style.color = "#00d09c";   
+                 
+            }
+            else
+            {
+                document.getElementById("answer").style.color = "#eb5b3c";    
+                document.getElementById("answer2").style.color = "#eb5b3c";    
+            }
+            
+           
         }
     </script>
 </head>
 
 <body style="background: #00d09c; margin-bottom:100px" class="container">
-    <img src="groww-logo.svg" style="height: 40px; margin:20px 20px;">
+    <img src="resources/groww-logo.svg" style="height: 40px; margin:20px 20px;">
     <div class="item-center box">
         <h1 class="heading">ICICI Prudential Technology Direct Plan Growth</h1>
+        <h1 class="heading-small">Holdings (37)</h1>
+    <table>
+        <tr class="table-heading">
+            <th>Company</th>
+            <th>Total Percentage</th>
+            <th>Today's Percentage</th>
+        </tr>
+        <tr>
+            <td><input id="c1" value="Infosys"></td>
+            <td><input id="c1total" value="17.2"></td>
+            <td><input id="c1change" value="1"></td>
+        </tr>
+        <tr>
+            <td>Centro comercial</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+        </tr>
+        
+    </table>
+    
         <div class="outer-div flex justify-center">
-            <div>Company</div>  
-            <div>Total Percentage</div>  
-            <div>Today's Percentage</div>  
+            <div></div>  
+            <div></div>  
+            <div></div>  
         </div>     
         <br>
-        <div class="outer-div">
-            <input id="c1" value="Infosys"> 
-            <input id="c1total" value="17.2">
-            <input id="c1change" value="0"><br>
-        </div>
         <br>
         Company2 : <input id="c2" value="TCS"><br>
         Total Percentage : <input id="c2total" value="10.3"><br>
@@ -135,8 +171,8 @@
         Today's Percentage : <input id="c3change" value="0"><br>
         <br>
         <div class="flex justify-center">
-            Profit Percentage : 
-            <input id="answer" style="margin-right:20px;">
+            Profit Percentage :
+            <input id="answer" style="margin-right:20px; font-weight:bold;">
             Total Profit :
             <input id="answer2">
         </div>
