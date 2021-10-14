@@ -15,48 +15,40 @@
             ct[2] = Number(document.getElementById("c3total").value);
             cc[2] = Number(document.getElementById("c3change").value);
             cp[2] = (ct[2]/100)* cc[2];
-            ct[3] = Number(document.getElementById("c3total").value);
-            cc[3] = Number(document.getElementById("c3change").value);
+            ct[3] = Number(document.getElementById("c4total").value);
+            cc[3] = Number(document.getElementById("c4change").value);
             cp[3] = (ct[3] / 100) * cc[3];
-            ct[4] = Number(document.getElementById("c3total").value);
-            cc[4] = Number(document.getElementById("c3change").value);
+            ct[4] = Number(document.getElementById("c5total").value);
+            cc[4] = Number(document.getElementById("c5change").value);
             cp[4] = (ct[4] / 100) * cc[4];
-            ct[5] = Number(document.getElementById("c3total").value);
-            cc[5] = Number(document.getElementById("c3change").value);
+            ct[5] = Number(document.getElementById("c6total").value);
+            cc[5] = Number(document.getElementById("c6change").value);
             cp[5] = (ct[5] / 100) * cc[5];
-            ct[6] = Number(document.getElementById("c3total").value);
-            cc[6] = Number(document.getElementById("c3change").value);
+            ct[6] = Number(document.getElementById("c7total").value);
+            cc[6] = Number(document.getElementById("c7change").value);
             cp[6] = (ct[6] / 100) * cc[6];
-            ct[7] = Number(document.getElementById("c3total").value);
-            cc[7] = Number(document.getElementById("c3change").value);
+            ct[7] = Number(document.getElementById("c8total").value);
+            cc[7] = Number(document.getElementById("c8change").value);
             cp[7] = (ct[7] / 100) * cc[7];
-            ct[8] = Number(document.getElementById("c3total").value);
-            cc[8] = Number(document.getElementById("c3change").value);
+            ct[8] = Number(document.getElementById("c9total").value);
+            cc[8] = Number(document.getElementById("c9change").value);
             cp[8] = (ct[8] / 100) * cc[8];
-            ct[9] = Number(document.getElementById("c3total").value);
-            cc[9] = Number(document.getElementById("c3change").value);
+            ct[9] = Number(document.getElementById("c10total").value);
+            cc[9] = Number(document.getElementById("c10change").value);
             cp[9] = (ct[9] / 100) * cc[9];
-            ct[10] = Number(document.getElementById("c3total").value);
-            cc[10] = Number(document.getElementById("c3change").value);
+            ct[10] = Number(document.getElementById("c11total").value);
+            cc[10] = Number(document.getElementById("c11change").value);
             cp[10] = (ct[10] / 100) * cc[10];
-            ct[11] = Number(document.getElementById("c3total").value);
-            cc[11] = Number(document.getElementById("c3change").value);
+            ct[11] = Number(document.getElementById("c12total").value);
+            cc[11] = Number(document.getElementById("c12change").value);
             cp[11] = (ct[11] / 100) * cc[11];
-            ct[12] = Number(document.getElementById("c3total").value);
-            cc[12] = Number(document.getElementById("c3change").value);
+            ct[12] = Number(document.getElementById("c13total").value);
+            cc[12] = Number(document.getElementById("c13change").value);
             cp[12] = (ct[12] / 100) * cc[12];
-            ct[13] = Number(document.getElementById("c3total").value);
-            cc[13] = Number(document.getElementById("c3change").value);
+            ct[13] = Number(document.getElementById("c14total").value);
+            cc[13] = Number(document.getElementById("c14change").value);
             cp[13] = (ct[13] / 100) * cc[13];
-            ct[14] = Number(document.getElementById("c3total").value);
-            cc[14] = Number(document.getElementById("c3change").value);
-            cp[14] = (ct[14] / 100) * cc[14];
-            ct[15] = Number(document.getElementById("c3total").value);
-            cc[15] = Number(document.getElementById("c3change").value);
-            cp[15] = (ct[15] / 100) * cc[15];
-            ct[16] = Number(document.getElementById("c3total").value);
-            cc[16] = Number(document.getElementById("c3change").value);
-            cp[16] = (ct[16] / 100) * cc[16];
+
             for (let i = 0; i < cp.length; i++) {
                 totalProfit += cp[i];
             }
@@ -78,16 +70,19 @@
             }
             
            
-        }
+        } 
     </script>
 </head>
 
 <body style="background: #00d09c; margin-bottom:100px" class="container">
-    <img src="resources/groww-logo.svg" style="height: 40px; margin:20px 20px;">
+    <img  src="resources/groww-logo.svg" style="height: 40px; margin:20px 20px;">
     <div class="item-center box">
+        <div class="flex justify-center">   
+        <img class="fund-logo"src="resources/icici_groww.svg">
         <h1 class="heading">ICICI Prudential Technology Direct Plan Growth</h1>
+        </div>
         <h1 class="heading-small">Holdings (37)</h1>
-    <table>
+       <table>
         <tr class="table-heading">
             <th>Company</th>
             <th>Total Percentage</th>
@@ -99,85 +94,78 @@
             <td><input id="c1change" value="1"></td>
         </tr>
         <tr>
-            <td>Centro comercial</td>
-            <td>Francisco Chang</td>
-            <td>Mexico</td>
+            <td><input id="c2" value="TCS"></td>
+            <td><input id="c2total" value="10.3"></td>
+            <td><input id="c2change" value="0"></td>
         </tr>
         <tr>
-            <td>Ernst Handel</td>
-            <td>Roland Mendel</td>
-            <td>Austria</td>
+            <td><input id="c3" value="Tech Mahindra"></td>
+            <td><input id="c3total" value="9.8"></td>
+            <td><input id="c3change" value="0"></td>
+        <tr>
+            <td><input id="c4" value="HCl"></td>
+            <td><input id="c4total" value="9.7"></td>
+            <td><input id="c4change" value="0"></td>
         </tr>
-        
+        <tr>
+            <td><input id="c5" value="Persistant"></td>
+            <td><input id="c5total" value="4.4"></td>
+            <td><input id="c5change" value="0"></td>
+        </tr>
+        <tr>
+            <td><input id="c6" value="Bharti Airtel"></td>
+            <td><input id="c6total" value="4.2"></td>
+            <td><input id="c6change" value="0"></td>
+        </tr>
+        <tr>
+            <td><input id="c7" value="Cyient"></td>
+            <td><input id="c7total" value="3.2"></td>
+            <td><input id="c7change" value="0"></td>
+        </tr>
+        <tr>
+            <td><input id="c8" value="Coforge"></td>
+            <td><input id="c8total" value="3.0"></td>
+            <td><input id="c8change" value="0"></td>
+        </tr>
+        <tr>
+            <td><input id="c9" value="Wipro"></td>
+            <td><input id="c9total" value="2.3"></td>
+            <td><input id="c9change" value="0"></td>
+        </tr>
+        <tr>
+            <td> <input id="c10" value="Mphasis"></td>
+            <td><input id="c10total" value="1.9"></td>
+            <td><input id="c10change" value="0"></td>
+        </tr>
+        <tr>
+            <td><input id="c11" value="Larsen and Tourbo infotech"></td>
+            <td><input id="c11total" value="1.6"></td>
+            <td><input id="c11change" value="0"></td>
+        </tr>
+        <tr>
+            <td><input id="c12" value="Zensar"></td>
+            <td><input id="c12total" value="1.3"></td>
+            <td><input id="c12change" value="0"></td>
+        </tr>
+        <tr>
+            <td><input id="c13" value="Birlasoft"></td>
+            <td><input id="c13total" value="1.2"></td>
+            <td><input id="c13change" value="0"></td>
+        </tr>
+        <tr>
+            <td><input id="c14" value="JustDial"></td>
+            <td><input id="c14total" value="1.1"></td>
+            <td><input id="c14change" value="0"></td>
+        </tr>
     </table>
-    
-        <div class="outer-div flex justify-center">
-            <div></div>  
-            <div></div>  
-            <div></div>  
-        </div>     
-        <br>
-        <br>
-        Company2 : <input id="c2" value="TCS"><br>
-        Total Percentage : <input id="c2total" value="10.3"><br>
-        Today's Percentage : <input id="c2change" value="0"><br>
-        <br>
-        Company3 : <input id="c3" value="Tech Mahindra"><br>
-        Total Percentage : <input id="c3total" value="9.8"><br>
-        Today's Percentage : <input id="c3change" value="0"><br>
-        <br>
-        Company4 : <input id="c4" value="HCL"><br>
-        Total Percentage : <input id="c3total" value="9.7"><br>
-        Today's Percentage : <input id="c3change" value="0"><br>
-        <br>
-        Company5 : <input id="c5" value="Persistant"><br>
-        Total Percentage : <input id="c3total" value="4.4"><br>
-        Today's Percentage : <input id="c3change" value="0"><br>
-        <br>
-        Company6 : <input id="c6" value="Bharti Airtel"><br>
-        Total Percentage : <input id="c3total" value="4.2"><br>
-        Today's Percentage : <input id="c3change" value="0"><br>
-        <br>
-        Company7 : <input id="c7" value="Cyient"><br>
-        Total Percentage : <input id="c3total" value="3.2"><br>
-        Today's Percentage : <input id="c3change" value="0"><br>
-        <br>
-        Company8 : <input id="c8" value="Coforge"><br>
-        Total Percentage : <input id="c3total" value="3.0"><br>
-        Today's Percentage : <input id="c3change" value="0"><br>
-        <br>
-        Company9 : <input id="c9" value="Wipro"><br>
-        Total Percentage : <input id="c3total" value="2.3"><br>
-        Today's Percentage : <input id="c3change" value="0"><br>
-        <br>
-        Company10 : <input id="c10" value="Mphasis"><br>
-        Total Percentage : <input id="c3total" value="1.9"><br>
-        Today's Percentage : <input id="c3change" value="0"><br>
-        <br>
-        Company11 : <input id="c11" value="Larsen and Tourbo infotech"><br>
-        Total Percentage : <input id="c3total" value="1.6"><br>
-        Today's Percentage : <input id="c3change" value="0"><br>
-        <br>
-        Company12 : <input id="c12" value="Zensar"><br>
-        Total Percentage : <input id="c3total" value="1.3"><br>
-        Today's Percentage : <input id="c3change" value="0"><br>
-        <br>
-        Company16 : <input id="c16" value="Birlasoft"><br>
-        Total Percentage : <input id="c3total" value="1.2"><br>
-        Today's Percentage : <input id="c3change" value="0"><br>
-        <br>
-        Company17 : <input id="c17" value="JustDial"><br>
-        Total Percentage : <input id="c3total" value="1.1"><br>
-        Today's Percentage : <input id="c3change" value="0"><br>
-        <br>
-        <div class="flex justify-center">
+        <div class="flex justify-center result">
             Profit Percentage :
-            <input id="answer" style="margin-right:20px; font-weight:bold;">
+            <input id="answer" class="text-result" value="Result">
             Total Profit :
-            <input id="answer2">
+            <input id="answer2" class="text-result">
         </div>
         <br>
-        <div class="flex justify-center">
+        <div class="flex justify-center" >
             <button class="button" onclick="add()">Calculate</button>
             </div>
         

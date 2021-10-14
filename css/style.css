@@ -115,3 +115,21 @@ tr{
     color:#858585;
     font-size: 1rem;;
 }
+.fund-logo{
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 4px;
+    padding: 5px;
+    display: flex;
+    height:35px;
+    margin-right: 10px;
+}
+.text-result{
+     font-weight:bold;
+      text-align: center;
+      margin-left: 10px;
+      margin-right: 10px;
+}
+
+.result{
+     margin: 10px;
+}
