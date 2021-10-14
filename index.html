@@ -55,8 +55,9 @@
             totalProfit = parseFloat(totalProfit).toFixed(2)
             document.getElementById("answer").value = totalProfit;
             document.getElementById("answer").value += "%";
-            totalProfit = parseFloat(totalProfit * 750000 / 100).toFixed(2)
-            document.getElementById("answer2").value = totalProfit;
+            totalProfit = parseFloat(totalProfit * 750000 / 100).toFixed(2);
+            document.getElementById("answer2").value = "Rs ";
+            document.getElementById("answer2").value += totalProfit;
             if(totalProfit>=0)
             {
                 document.getElementById("answer").style.color = "#00d09c";   
